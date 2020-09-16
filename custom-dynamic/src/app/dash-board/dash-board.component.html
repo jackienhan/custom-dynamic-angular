@@ -1,0 +1,9 @@
+<nav [ngClass] = "'parent-menu'">
+  <ul>
+    <li><a routerLink="/drop-down" routerLinkActive="active">Drop Down</a></li>
+    <li><a routerLink="/page-tab" routerLinkActive="active">Page Tab</a></li>
+  </ul>
+</nav>
+<div [ngClass] = "'parent-container'">
+  <router-outlet></router-outlet>
+</div>

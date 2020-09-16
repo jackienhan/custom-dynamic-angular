@@ -1,0 +1,12 @@
+<div class="dropdown">
+  <div class="dropbtn" [innerHTML]="display">
+  </div>
+  <div id="myDropdown" class="dropdown-content">
+    <ul class="drop__down__list">
+      <li class="drop__down__li" *ngFor="let item of items">
+        <input [id]="item?.id" value="one" type="radio" name="display" (click)="on(item)"/>
+        <label [attr.for]="item?.id">{{item?.value}}</label>
+      </li>
+    </ul>
+  </div>
+</div>
